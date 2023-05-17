@@ -5,7 +5,7 @@ import com.pkslow.ai.*;
 import java.time.Duration;
 
 public class Main {
-    private static final String token = "";
+    private static final String token = "e01a29d7-8a2d-4af6-9784-f8519d364209";
     public static void main(String[] args) {
         NetworkUtils.setUpProxy("localhost", "7890");
 
