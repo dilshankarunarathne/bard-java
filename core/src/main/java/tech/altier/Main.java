@@ -1,11 +1,9 @@
 package tech.altier;
 
-import com.pkslow.ai.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.Duration;
+
 import java.util.Scanner;
 
 public class Main {
