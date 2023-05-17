@@ -14,12 +14,16 @@ class Main {
             System.out.print("You: ");
             String input = scanner.nextLine();
             if (input.equals("exit")) break;
-            System.out.println("Bot: " + chat(input));
+            System.out.println("Bot: " + parseResponse(chat(input)));
         }
     }
 
-    private static parseResponse(String response) {
-        
+    /**
+     * this method removes first 11 characters and last 2 characters from the response
+     * @param response
+     */
+    private static String parseResponse(String response) {
+        return response.substring(11, response.length() - 2);
     }
 
     private static String chat(String input) throws IOException {
