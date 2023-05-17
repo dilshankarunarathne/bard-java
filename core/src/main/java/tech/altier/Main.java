@@ -2,6 +2,7 @@ package tech.altier;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import java.util.Scanner;
@@ -24,6 +25,13 @@ public class Main {
                 e.printStackTrace();
             }
         }
+    }
+
+    private static String chat(String input) {
+        String Demo_Command = "curl -X POST https://localhost/post --data delft1=stack1&delft2=stack2";
+        Process Demo_process = Runtime.getRuntime().exec(Demo_Command);
+        InputStream Input_Stream = Demo_process.getInputStream();
+        Demo_process.destroy();
     }
 
     private static String curl(String input) throws IOException {
