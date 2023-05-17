@@ -27,7 +27,7 @@ public class Main {
         }
     }
 
-    private static String chat(String input) {
+    private static String chat(String input) throws IOException {
         String Demo_Command = "curl -X POST https://localhost/post --data delft1=stack1&delft2=stack2";
         Process Demo_process = Runtime.getRuntime().exec(Demo_Command);
         InputStream Input_Stream = Demo_process.getInputStream();
