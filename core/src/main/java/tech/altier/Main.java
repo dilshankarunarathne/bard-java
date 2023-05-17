@@ -5,9 +5,10 @@ import com.pkslow.ai.*;
 import java.time.Duration;
 
 public class Main {
+    private static final String token = "";
     public static void main(String[] args) {
         NetworkUtils.setUpProxy("localhost", "7890");
-        String token = args[0];
+
         AIClient client = new GoogleBardClient(token, Duration.ofMinutes(10));
 
         Answer answer = client.ask("What is the population of London?");
